@@ -16,7 +16,7 @@ public class Product {
 	private Long id;
 	
 	private String name;
-	private Long suplier;
+	private Long supplier;
 	private Long category;
 	
 	@Column(name="unit_price",nullable=false)
@@ -38,11 +38,12 @@ public class Product {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Long getSuplier() {
-		return suplier;
+	
+	public Long getSupplier() {
+		return supplier;
 	}
-	public void setSuplier(Long suplier) {
-		this.suplier = suplier;
+	public void setSupplier(Long supplier) {
+		this.supplier = supplier;
 	}
 	public Long getCategory() {
 		return category;

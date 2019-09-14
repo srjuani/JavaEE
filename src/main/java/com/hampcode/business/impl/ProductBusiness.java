@@ -1,5 +1,6 @@
 package com.hampcode.business.impl;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.Optional;
 
@@ -12,8 +13,13 @@ import com.hampcode.model.entity.Product;
 import com.hampcode.model.repository.IProductRepository;
 
 @Named
-public class ProductBusiness implements IProductBusiness{
+public class ProductBusiness implements IProductBusiness,Serializable{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
 	@Inject
 	private IProductRepository productRepository;
 	
